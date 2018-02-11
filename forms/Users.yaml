@@ -2,7 +2,16 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
+- type: Button
+  properties: {role: null, width: default, align: center, border: '', enabled: true,
+    foreground: '', visible: true, text: 'filter: test', font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: ''}
+  name: button_1
+  layout_properties: {grid_position: 'IJHIKX,WEHJUG'}
+  event_bindings: {click: button_1_click}
 - type: RepeatingPanel
   properties: {item_template: UserTemplaate}
   name: repeating_panel_1
   layout_properties: {grid_position: 'EPIGFA,VNWNHX'}
+  event_bindings: {show: repeating_panel_1_show}
