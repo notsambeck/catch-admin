@@ -2,7 +2,7 @@ package_name: CatchAdmin
 name: CatchAdmin
 startup_form: Layout
 renamed: true
-runtime_options: {server_version: python2-sandbox}
+runtime_options: {server_version: python3-full}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}

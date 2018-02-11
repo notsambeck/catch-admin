@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"DLAQKD":30,"GNORKW":15,"BSSPFV":15}'}
+  properties: {col_widths: '{"DLAQKD":30,"BSSPFV":15}'}
 components:
 - type: Label
   properties: {}
@@ -8,14 +8,6 @@ components:
   layout_properties: {grid_position: 'BJJOVQ,DLAQKD'}
   data_bindings:
   - {property: text, code: 'self.item[''handle'']'}
-- type: Button
-  properties: {role: null, width: default, align: center, border: '', enabled: true,
-    foreground: '', visible: true, text: count_actions, font_size: null, font: '',
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
-    bold: false, underline: false, icon: ''}
-  name: button_1
-  layout_properties: {grid_position: 'BJJOVQ,GNORKW'}
-  event_bindings: {click: button_1_click}
 - type: Label
   properties: {}
   name: label_2
