@@ -10,6 +10,7 @@ from collections import defaultdict
 def get_user_action_counts(user):
   return len(app_tables.user_actions.search(user=user))
 
+@anvil.server.callable
 def get_traffic():
   '''
   gets a dictionary:
