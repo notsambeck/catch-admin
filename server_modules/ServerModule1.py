@@ -16,7 +16,7 @@ def get_traffic():
   gets a dictionary:
   {time bucket (hour): number of actions in bucket}
   '''
-  out = defaultdict(0)
+  out = defaultdict()
   now = datetime.utcnow()
   data = app_tables.user_actions.search(tables.order_by('time', ascending=False))
   for row in data:
